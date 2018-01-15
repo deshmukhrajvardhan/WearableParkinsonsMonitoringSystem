@@ -5,6 +5,7 @@ matrix:
     - language: c++
     - language: html
     - language: css
+    - language: Tex
     
     
     
