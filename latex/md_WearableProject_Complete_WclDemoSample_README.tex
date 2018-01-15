@@ -1,0 +1,62 @@
+This is a sample app that shows how one can set up an application to use the Wear\+Companion\+Library. It has both a phone and a wear component. On your mobile, select a page from the drawer and there, you can open the corresponding page on your wear device by pressing on the F\+AB button at the lower right corner of the page. On your wear device, you can select an item form the list when you run the app. Features shown here include exchanging data, launching remote app, making H\+T\+TP calls from the wear device, showing variations of Wearable\+List\+View activities and recording voice on the wear and streaming that to the mobile device and playing it there in real-\/time. In order for each feature to work properly, you have to be on that feature\textquotesingle{}s page on both the mobile app and the wear app at the same time.
+
+\subsection*{Dependencies}
+
+
+\begin{DoxyItemize}
+\item \href{https://github.com/googlesamples/android-WearCompanionLibrary}{\tt Wear\+Companion\+Library (W\+CL)}
+\item The phone module also depends on the \href{http://android-developers.blogspot.com/2015/05/android-design-support-library.html}{\tt design support library}.
+\item Note\+: if you follow the instructions below, the W\+CL library will bring in other dependencies that are needed. If you choose to use W\+CL in a different way (for example using an archive version of that library), then you may need to include the dependencies that are listed for W\+CL as well.
+\end{DoxyItemize}
+
+\subsection*{Setup}
+
+
+\begin{DoxyItemize}
+\item Checkout this project as Wcl\+Demo\+Sample\+: 
+\begin{DoxyCode}
+1 $ git clone https://github.com/googlesamples/android-WclDemoSample.git WclDemoSample
+\end{DoxyCode}
+
+\item Checkout W\+CL as a sibling to this project under the name Wear\+Companion\+Library\+: 
+\begin{DoxyCode}
+1 $ git clone https://github.com/googlesamples/android-WearCompanionLibrary.git WearCompanionLibrary
+\end{DoxyCode}
+
+\item To make sure all is working, compile W\+CL\+: 
+\begin{DoxyCode}
+1 $ cd WearCompanionLibrary && ./gradlew build
+\end{DoxyCode}
+
+\item Compile this project\+: 
+\begin{DoxyCode}
+1 $ cd ../WclDemoSample && ./gradlew build
+\end{DoxyCode}
+
+\item To open the project in Android Studio, you may need to first open the W\+CL project in Android Studio to build the required \char`\"{}$\ast$.\+iml\char`\"{} file for Android Studio. To do this, start Android Studio and select \char`\"{}\+Open An Existing
+  Android Studio Project\char`\"{} and navigate to Wear\+Companion\+Library directory and select the build.\+gradle in the root of that project. This should create the needed files.
+\item Close Android Studio and open that again and follow the same steps but this time navigate to Wcl\+Demo\+Sample project and select build.\+gradle there.
+\end{DoxyItemize}
+
+\subsection*{References and How to report bugs}
+
+
+\begin{DoxyItemize}
+\item W\+CL has a documentation (in P\+DF format) in its project. This code has comments that along with the W\+CL\textquotesingle{}s documentation should be adequate to guide you through the sample.
+\item If you find any issues with this sample, please open a bug here on Git\+Hub; if you find any issue with W\+CL or have a feature request, please open a ticket on that repository.
+\end{DoxyItemize}
+
+\subsection*{How to make contributions?}
+
+Please read and follow the steps in the C\+O\+N\+T\+R\+I\+B\+U\+T\+I\+NG
+
+\subsection*{License}
+
+See L\+I\+C\+E\+N\+SE
+
+\subsection*{Change List}
+
+1.\+0
+\begin{DoxyItemize}
+\item Initial release 
+\end{DoxyItemize}
