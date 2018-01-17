@@ -3,75 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="/home/rajvardhan/.android/build-cache/ef8653b6967fd913620b4f00a4974055575f96fd/output/jars/classes.jar"
+        jar="C:\Users\Shamanth\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WearCompanionLibrary\WCL\build\intermediates\bundles\default\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
-        sha1="c6d79137693d494dee16372d3921f919eb724ced">
-        <dex dex="/home/rajvardhan/Desktop/WearableParkinsonsMonitoringSystem/WearableProject_Complete/WclDemoSample/wear/build/intermediates/pre-dexed/debug/classes_b11b6a72c72301451ddec0b91b7c5fd3f5b7a10f.jar" />
+        sha1="1f67d0e43214f06eac09998629347069b7b74b0f">
+        <dex dex="C:\Users\Shamanth\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\mobile\build\intermediates\pre-dexed\debug\classes_b40c1edc6a069820f291cda3036850dd566acfef.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/home/rajvardhan/.android/build-cache/f8cb08d668eccf3eb61a768504a72d7d8449921d/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="/home/rajvardhan/Desktop/WearableParkinsonsMonitoringSystem/WearableProject_Complete/WclDemoSample/mobile/build/intermediates/pre-dexed/debug/classes_3ab8c70e131f932d8006b5a59e62ade1c693308c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/rajvardhan/Desktop/WearableParkinsonsMonitoringSystem/WearableProject_Complete/WearCompanionLibrary/WCL/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="7a2330be54f854868f42f5d1365e73f15ed53139">
-        <dex dex="/home/rajvardhan/Desktop/WearableParkinsonsMonitoringSystem/WearableProject_Complete/WclDemoSample/mobile/build/intermediates/pre-dexed/debug/classes_9b1fb1c2c782a7a5c5a8ec1ae1c2ab03748438e8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/rajvardhan/.android/build-cache/f8cb08d668eccf3eb61a768504a72d7d8449921d/output/jars/libs/internal_impl-23.1.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
-        <dex dex="/home/rajvardhan/Desktop/WearableParkinsonsMonitoringSystem/WearableProject_Complete/WclDemoSample/mobile/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_730de722667c8ca5f82ddb4ad6dab7313d9b171c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/rajvardhan/.android/build-cache/bb12ce52f2cfeed5c1461fcea194ded2a9444f82/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="/home/rajvardhan/Desktop/WearableParkinsonsMonitoringSystem/WearableProject_Complete/WclDemoSample/mobile/build/intermediates/pre-dexed/debug/classes_84023f8a3293dfac9deda422e30a6832cf928b49.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/rajvardhan/.android/build-cache/7878e95152e8bfe6dfcca883c165d8d885fa57aa/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
-        <dex dex="/home/rajvardhan/Desktop/WearableParkinsonsMonitoringSystem/WearableProject_Complete/WclDemoSample/mobile/build/intermediates/pre-dexed/debug/classes_460edce5a8610fdb16dd69add1fd9db70dc923ae.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/rajvardhan/.android/build-cache/e0de26ef1d978d2d5e4748313991d53cdb055d79/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.0"
-        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
-        <dex dex="/home/rajvardhan/Desktop/WearableParkinsonsMonitoringSystem/WearableProject_Complete/WclDemoSample/mobile/build/intermediates/pre-dexed/debug/classes_be3e93e3513f3824140932d8a2a37b66fffca20d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/rajvardhan/Desktop/WearableParkinsonsMonitoringSystem/WearableProject_Complete/WclDemoSample/shared/build/intermediates/bundles/default/classes.jar"
+        jar="C:\Users\Shamanth\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\shared\build\intermediates\bundles\default\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.0"
         sha1="69dcde9c8ccb1455529583c0fdffd05e7a935c23">
-        <dex dex="/home/rajvardhan/Desktop/WearableParkinsonsMonitoringSystem/WearableProject_Complete/WclDemoSample/mobile/build/intermediates/pre-dexed/debug/classes_f7a9c0af3e30945cb037f0756934a911891dd2b1.jar" />
+        <dex dex="C:\Users\Shamanth\WearableParkinsonsMonitoringSystem\WearableProject_Complete\WclDemoSample\mobile\build\intermediates\pre-dexed\debug\classes_77c7a18ce70d574aa7074c0d0e2a566116b5b297.jar" />
     </item>
 
 </items>

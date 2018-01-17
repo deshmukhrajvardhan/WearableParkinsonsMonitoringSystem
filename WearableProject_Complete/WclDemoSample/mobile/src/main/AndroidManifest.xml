@@ -67,7 +67,7 @@
 
 
 
-        <activity
+      <!--  <activity
             android:name=".MobileMainActivity"
             android:clearTaskOnLaunch="true"
             android:label="@string/app_name"
@@ -77,7 +77,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
 
         <service android:name="com.google.devrel.wcl.WclWearableListenerService">
             <intent-filter>

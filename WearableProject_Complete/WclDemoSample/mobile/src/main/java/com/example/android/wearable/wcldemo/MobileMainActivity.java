@@ -34,11 +34,7 @@ import android.widget.Toast;
 import com.google.devrel.wcl.WearManager;
 
 import com.example.android.wearable.wcldemo.common.Constants;
-import com.example.android.wearable.wcldemo.pages.DataExchangeFragment;
 import com.example.android.wearable.wcldemo.pages.FileTransferFragment;
-import com.example.android.wearable.wcldemo.pages.IntroFragment;
-import com.example.android.wearable.wcldemo.pages.StockFragment;
-import com.example.android.wearable.wcldemo.pages.VoiceFragment;
 
 /**
  * The main activity for this mobile application. It opens up with an introductory page and offers
@@ -78,9 +74,9 @@ public class MobileMainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        IntroFragment fragment = new IntroFragment();
+       /* IntroFragment fragment = new IntroFragment();
         getSupportFragmentManager().beginTransaction()
-                .add(R.id.fragment_container, fragment).commit();
+                .add(R.id.fragment_container, fragment).commit();*/
 
         if (getIntent() != null && getIntent().getExtras() != null) {
             Bundle bundle = getIntent().getExtras();
@@ -134,9 +130,9 @@ public class MobileMainActivity extends AppCompatActivity
         }
         Fragment fragment = null;
         switch (target) {
-            case Constants.TARGET_INTRO:
+           /* case Constants.TARGET_INTRO:
                 fragment = new IntroFragment();
-                break;
+                break;*/
             case Constants.TARGET_FILE_TRANSFER:
                 fragment = new FileTransferFragment();
                 break;

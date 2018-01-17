@@ -1,7 +1,5 @@
 package com.example.android.wearable.wcldemo;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,11 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.android.wearable.wcldemo.common.Constants;
 import com.example.android.wearable.wcldemo.pages.FileTransferFragment;
-import com.example.android.wearable.wcldemo.pages.IntroFragment;
 
 public class TestListActivity extends AppCompatActivity {
 
@@ -54,6 +49,36 @@ public class TestListActivity extends AppCompatActivity {
             // The code in this method will be executed when the numbers View is clicked on.
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(TestListActivity.this, FileTransferFragment.class));
+               /* Fragment fragment = new FileTransferFragment();
+
+                if(fragment != null) {
+                    android.support.v4.app.FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+                    transaction.add(R.id.fragment_container, fragment);
+                    transaction.addToBackStack(null);
+
+                    transaction.commit();
+                }
+                else
+                {
+                    String yo= "no frag";
+                    Log.d("NO","FRAG");
+
+                    //Toast.makeText("Centered", Toast.LENGTH_SHORT).show();
+
+                }
+*/
+            }
+        });
+
+        TextView file = (TextView) findViewById(R.id.tvFile);
+
+        // Set a click listener on that View
+        file.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the numbers View is clicked on.
+            @Override
+            public void onClick(View view) {
                 //startActivity(new Intent(TestListActivity.this, FileTransferFragment.class));
                 Fragment fragment = new FileTransferFragment();
 
@@ -76,8 +101,6 @@ public class TestListActivity extends AppCompatActivity {
 
             }
         });
-
-
 
         // Find the View that shows the gait category
         TextView gait = (TextView) findViewById(R.id.tvGait);

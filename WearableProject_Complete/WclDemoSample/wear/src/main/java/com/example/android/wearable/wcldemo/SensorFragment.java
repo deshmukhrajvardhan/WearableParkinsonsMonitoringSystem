@@ -137,7 +137,7 @@ public class SensorFragment extends Fragment implements SensorEventListener {
                             "y = " + Float.toString(event.values[1]) + "\n" +
                             "z = " + Float.toString(event.values[2]) + "\n" +
                             "magnitude = "+ Float.toString(mMagnitude) + "\n" +
-                            "AccMag = " + Float.toString(mAccelerometerMagnitude)
+                            "ID = " + Float.toString(mLatestId)
 
             );
 
