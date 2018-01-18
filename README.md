@@ -20,7 +20,7 @@ Select ``Launch on Mobile``` option to open the app on the Android phone. <br />
 ## Mobile App
 The app for the Android mobile phone which has the following functionalities:
 a) Register new user. <br />
-![image1](../master/Documentation_Resources/RegisterUser.jpg)
+![image1](../master/Documentation_Resources/RegisterUser.jpg | width=50)
 b) Register Medical History of the patient. <br />
 ![image2](../master/Documentation_Resources/MedicalHistory.jpg)
 ![image3](../master/Documentation_Resources/MedicalHistory2.jpg)
