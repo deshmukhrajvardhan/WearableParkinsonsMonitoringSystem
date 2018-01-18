@@ -15,7 +15,7 @@ The database can be pushed to the phone. <br />
 Select ```File Transfer``` option and then click on ```Send DB``` to transfer the DB file to the android phone. <br />
 ![text1](../master/Documentation_Resources/WearOptions.jpg)
 
-Select ``Launch on Mobile``` option to open the app on the Android phone. <br />
+Select ```Launch on Mobile``` option to open the app on the Android phone. <br />
 
 ## Mobile App
 The app for the Android mobile phone which has the following functionalities:
