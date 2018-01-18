@@ -42,7 +42,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="../../namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>android</b></li><li class="navelem"><b>wearable</b></li><li class="navelem"><a class="el" href="../../d3/d4e/namespacecom_1_1example_1_1android_1_1wearable_1_1wcldemo.html">wcldemo</a></li><li class="navelem"><b>pages</b></li><li class="navelem"><a class="el" href="../../de/d27/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity.html">FileTransferActivity</a></li>  </ul>
+<li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>android</b></li><li class="navelem"><b>wearable</b></li><li class="navelem"><b>wcldemo</b></li><li class="navelem"><b>pages</b></li><li class="navelem"><a class="el" href="../../de/d27/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity.html">FileTransferActivity</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -118,8 +117,7 @@ Collaboration diagram for com.example.android.wearable.wcldemo.pages.FileTransfe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab5d34a68bab9687e8c6c6728078b1787"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5d34a68bab9687e8c6c6728078b1787"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fileCheck</b> ()</td></tr>
+<tr class="memitem:ab5d34a68bab9687e8c6c6728078b1787"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d27/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity.html#ab5d34a68bab9687e8c6c6728078b1787">fileCheck</a> ()</td></tr>
 <tr class="separator:ab5d34a68bab9687e8c6c6728078b1787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e8bcc2ee814cbb77934257f8094861b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e8bcc2ee814cbb77934257f8094861b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>onClick</b> (View view)</td></tr>
@@ -135,7 +133,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a850d1ecdeb1eeab869a6775c2b06f8ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a850d1ecdeb1eeab869a6775c2b06f8ad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>onCreate</b> (Bundle savedInstanceState)</td></tr>
 <tr class="separator:a850d1ecdeb1eeab869a6775c2b06f8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a722d42846eabd9a70e5cc9d0b534247d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d27/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity.html#a722d42846eabd9a70e5cc9d0b534247d">onResume</a> ()</td></tr>
+<tr class="memitem:a722d42846eabd9a70e5cc9d0b534247d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a722d42846eabd9a70e5cc9d0b534247d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>onResume</b> ()</td></tr>
 <tr class="separator:a722d42846eabd9a70e5cc9d0b534247d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a7be84800a05c0f9c69f842c50dafc7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a7be84800a05c0f9c69f842c50dafc7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>onPause</b> ()</td></tr>
@@ -143,10 +142,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onPause</b> ()</td></
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An activity that shows two different approaches to transferring files between wear nodes.</p>
-<p>In the first approach (called high-level on the UI), we have a text file that we want to transfer across. We use <a class="el" href="../../d3/dfd/classcom_1_1google_1_1devrel_1_1wcl_1_1connectivity_1_1WearFileTransfer.html#abdabe46833a251759e295e4de2cc3c95">WearFileTransfer#startTransfer()</a> method to accomplish this.</p>
-<p>The second approach, called low-level, transfers an image from the wear device (as a "raw" asset) to the phone and we use <a class="el" href="../../">WearFileTransfer</a> apis to open a channel between the two devices first and then open an <a class="el" href="../../">OutputStream</a> on the wear device and an <a class="el" href="../../">InputStream</a> on the phone (through the channel). Then we simply read chunks of bytes from the image and write to the</p><div class="fragment"><div class="line">OutputStream </div></div><!-- fragment --><p> opened on the wear and read the transferred bytes from the </p><div class="fragment"><div class="line">InputStream </div></div><!-- fragment --><p> on the mobile. This approach is more useful for real-time communication to transfer bytes as they become available (for example as the microphone on the watch is recording a voice message). In this sample, we show a progress bar on the wear as we transfer bytes of the image to the phone.</p>
+<p>The low level approach transfers the db file which is specified in the method <a class="el" href="../../de/d27/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity.html#ab5d34a68bab9687e8c6c6728078b1787">fileCheck()</a> from the wear device to the phone using method and we use <a class="el" href="../../">WearFileTransfer</a> apis to open a channel between the two devices first and then open an <a class="el" href="../../">OutputStream</a> on the wear device and an <a class="el" href="../../">InputStream</a> on the phone (through the channel). Then we simply read chunks of bytes from the db file(fileforDb) and write to the</p><div class="fragment"><div class="line">OutputStream </div></div><!-- fragment --><p> opened on the wear and read the transferred bytes from the </p><div class="fragment"><div class="line">InputStream </div></div><!-- fragment --><p> on the mobile. This approach is more useful for real-time communication to transfer bytes as they become available (for example as the microphone on the watch is recording a voice message). In this sample, we show a progress bar on the wear as we transfer bytes of the db file to the phone.</p>
 <p>A lot of the complexity involved in the orchestration of this approach is done in the library and is hidden from the developer; developers only request an output stream on one end and will be notified when the channel is established and when an output stream is available on the sender side, and will receive a similar callback on the other end when an input stream is available. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab5d34a68bab9687e8c6c6728078b1787"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.android.wearable.wcldemo.pages.FileTransferActivity.fileCheck </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>To check the if the db file<a class="el" href="../../">com.example.android.wearable.wcldemo.SensorDataDbHelper#DATABASE_NAME</a> exists and to verify the length of the db file. </p>
+
+</div>
+</div>
 <a class="anchor" id="a1d913d854d84ec830dc2bc724d580bef"></a>
 <div class="memitem">
 <div class="memproto">
@@ -170,31 +184,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onPause</b> ()</td></
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Called on a non-UI thread </p>
-
-</div>
-</div>
-<a class="anchor" id="a722d42846eabd9a70e5cc9d0b534247d"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void com.example.android.wearable.wcldemo.pages.FileTransferActivity.onResume </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Copies a file from the assets directory to the internal application's file storage so we can get a hold of it as a <a class="el" href="../../">File</a> object. It returns a <a class="el" href="../../">File</a> reference to the file. </p>
+<p>Called on a non-UI thread This method shows the progress bar as the file is being transferred once the "Send DB" button is pressed. </p>
 
 </div>
 </div>

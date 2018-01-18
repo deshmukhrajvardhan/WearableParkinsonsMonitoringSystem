@@ -1,14 +1,9 @@
 var searchData=
 [
-  ['selectablewearablelistadapter',['SelectableWearableListAdapter',['../d2/d48/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter.html',1,'com::google::devrel::wcl::widgets::list']]],
-  ['sensoractivity',['SensorActivity',['../d6/d18/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1SensorActivity.html',1,'com::example::android::wearable::wcldemo']]],
-  ['sensordatacontract',['SensorDataContract',['../d7/df3/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1SensorDataContract.html',1,'com::example::android::wearable::wcldemo']]],
-  ['sensordatadbhelper',['SensorDataDbHelper',['../d9/dac/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1SensorDataDbHelper.html',1,'com::example::android::wearable::wcldemo']]],
-  ['sensordatadbhelper',['SensorDataDbHelper',['../d7/db9/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1helper_1_1SensorDataDbHelper.html',1,'com::example::android::wearable::wcldemo::helper']]],
-  ['sensorfragment',['SensorFragment',['../d8/db9/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1SensorFragment.html',1,'com::example::android::wearable::wcldemo']]],
-  ['sensorfragmentpageradapter',['SensorFragmentPagerAdapter',['../d4/de1/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1SensorFragmentPagerAdapter.html',1,'com::example::android::wearable::wcldemo']]],
-  ['singlenodefilter',['SingleNodeFilter',['../d8/dca/classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1SingleNodeFilter.html',1,'com::google::devrel::wcl::filters']]],
-  ['stockactivity',['StockActivity',['../d8/dcf/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity.html',1,'com::example::android::wearable::wcldemo::pages']]],
-  ['stockfragment',['StockFragment',['../d1/d09/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockFragment.html',1,'com::example::android::wearable::wcldemo::pages']]],
-  ['streamingvoiceactivity',['StreamingVoiceActivity',['../de/d88/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StreamingVoiceActivity.html',1,'com::example::android::wearable::wcldemo::pages']]]
+  ['testlistactivity',['TestListActivity',['../d5/d0f/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1TestListActivity.html',1,'com::example::android::wearable::wcldemo']]],
+  ['tremoractivity',['TremorActivity',['../da/d55/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1TremorActivity.html',1,'com::example::android::wearable::wcldemo']]],
+  ['tremorintentionactivity',['TremorIntentionActivity',['../d3/dfc/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1TremorIntentionActivity.html',1,'com::example::android::wearable::wcldemo']]],
+  ['tremorkineticactivity',['TremorKineticActivity',['../d9/db9/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1TremorKineticActivity.html',1,'com::example::android::wearable::wcldemo']]],
+  ['tremorposturalactivity',['TremorPosturalActivity',['../d5/d8d/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1TremorPosturalActivity.html',1,'com::example::android::wearable::wcldemo']]],
+  ['tremorrestactivity',['TremorRestActivity',['../dc/da8/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1TremorRestActivity.html',1,'com::example::android::wearable::wcldemo']]]
 ];
