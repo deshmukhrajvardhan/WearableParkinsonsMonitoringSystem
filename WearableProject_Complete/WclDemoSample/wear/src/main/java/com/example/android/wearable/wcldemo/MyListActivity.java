@@ -31,9 +31,9 @@ import com.google.devrel.wcl.widgets.list.AbstractWearableListViewActivity;
 import com.google.devrel.wcl.widgets.list.WearableListConfig;
 
 /**
- * The entry point to the application. This activity also serves as a demo of the
+ * The entry point to the application. This activity also serves as an implementation of the
  * {@link AbstractWearableListViewActivity}; clients need to only implement two methods in this
- * class to have a fully functional ListView. In this activity, we also demo a different way to show
+ * class to have a fully functional ListView. In this activity, we also use a different way to show
  * a WearableListView by calling {@link WearManager#showWearableList(Activity, WearableListConfig)};
  * that approach is useful when you want to present a list to the user and close the list after user
  * makes a selection; the result can be captured by
@@ -48,7 +48,7 @@ public class MyListActivity extends AbstractWearableListViewActivity {
     private static final String MOBILE_APP_CAPABILITY = "mobile_application";
     private WearManager mWearManager;
     private static final String MOBILE_APP_ACTIVITY_NAME
-            = "com.example.android.wearable.wcldemo.MobileMainActivity";
+            = "com.example.android.wearable.wcldemo.LoginActivity";
    // private SQLiteDatabase mDB;
 
 
@@ -56,68 +56,47 @@ public class MyListActivity extends AbstractWearableListViewActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mWearManager = WearManager.getInstance();
-       /* int finishTime = 10; //10 secs
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                finish();
-            }
-        }, finishTime * 1000);*/
 
-        //SensorDataDBHelper dbhelper = new SensorDataDBHelper(this);
-        //mDB = dbhelper.getWritableDatabase();
     }
-
-    /*This method is for the main page of the Wearable App. It shows the 3 options for the users to select i.e., File Transfer
-    (FileTransferActivity), Record Sensor Values(SensorActivity) and Launch Mobile App(launchMobileApp)*/
+/**
+ * This method is for the main page of the Wearable App. It shows the 3 options for the users to select i.e., File Transfer
+ (FileTransferActivity), Record Sensor Values(SensorActivity) and Launch Mobile App(launchMobileApp)
+    */
     @Override // AbstractWearableListViewActivity
     public void onItemClicked(int position, String value) {
         Log.d(TAG, "Item clicked: position=" + position + ", value=" + value);
         switch (position) {
-        /*    case 0:
-                showActivity(DataExchangeActivity.class);
-                break;
-         */ case 0:
+
+            case 0:
                 showActivity(FileTransferActivity.class);
                 break;
             case 1:
                 showActivity(SensorActivity.class);
                 break;
-           /* case 2:
-                showListDialog();
-                break;
-            case 3:
-                showActivity(StockActivity.class);
-                break;
-            case 4:
-                showActivity(StreamingVoiceActivity.class);
-                break;
-          */  case 2:
+
+            case 2:
                 launchMobileApp();
                 break;
         }
     }
 
+    /**
+     * Has the list of icons and placeholder names for the options.
+     * @return
+     */
     @NonNull
     @Override // AbstractWearableListViewActivity
     public WearableListConfig getConfiguration() {
         String[] data = new String[]{
-               /* getString(R.string.nav_open_data_exchange),
-                */getString(R.string.nav_open_file_transfer),
+                getString(R.string.nav_open_file_transfer),
                 getString(R.string.rec_sensor_value),
-                /*getString(R.string.list_dialog),
-                getString(R.string.nav_open_stock),
-                getString(R.string.stream_voice),
-               */getString(R.string.launch_mobile)
+                getString(R.string.launch_mobile)
         };
 
         int[] icons = new int[]{
-                /*R.drawable.ic_import_export_24dp,
-                */R.drawable.ic_file_upload_24dp,
+                R.drawable.ic_file_upload_24dp,
                 R.drawable.ic_list_24dp,
-                /*R.drawable.ic_language_24dp,
-                R.drawable.ic_mic_24dp,
-                */R.drawable.ic_phone_android_24dp
+                R.drawable.ic_phone_android_24dp
         };
         // we build a configuration object that allows us to show a list of items where each row
         // is represented by a different icon. We also turn on the ambient mode for this page.
@@ -128,27 +107,9 @@ public class MyListActivity extends AbstractWearableListViewActivity {
                 .build();
     }
 
+
     /**
-     * This method shows how you can open a full screen list of options for user to make a
-     * selection. The result of that selection will be captured by the {@code onActivityResult}
-     * below.
-     */
-    /*private void showListDialog() {
-        // some dummy values to show in the list
-        String[] data = new String[]{"Option 1", "Option 2", "Option 3", "Option 4"};
-        WearableListConfig config = new WearableListConfig.Builder(data)
-                .setCheckedIndex(1) // index starts from 0
-                .setRequestCode(REQUEST_CODE_LIST_DIALOG)
-                .setIcon(R.drawable.ic_person_24dp) // here we use the same icon for all rows
-                .setCheckable(true) // we declare that we can have "checked" state
-                .build();
-        WearApplication.sendNavMessage(Constants.TARGET_LIST_DIALOG);
-        WearManager.getInstance().showWearableList(this, config);
-    }
-
-
-    */
-    /*This method is the result of selection on the main page. The selection is captured in this method. */
+     * This method is the result of selection on the main page. The selection is captured in this method. */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK) {
@@ -174,6 +135,10 @@ public class MyListActivity extends AbstractWearableListViewActivity {
 
     }
 
+    /**
+     * Method to launch new activity.
+     * @param activity
+     */
     private void showActivity(Class<?> activity) {
         Intent intent = new Intent(this, activity);
         startActivity(intent);

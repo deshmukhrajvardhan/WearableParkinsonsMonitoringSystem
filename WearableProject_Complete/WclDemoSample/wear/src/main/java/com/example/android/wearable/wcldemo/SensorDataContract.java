@@ -2,6 +2,7 @@ package com.example.android.wearable.wcldemo;
 
 /**
  * Created by rajvardhan on 11/29/17.
+ * This class defines the columns in the sensor readings database.
  */
 import android.provider.BaseColumns;
 

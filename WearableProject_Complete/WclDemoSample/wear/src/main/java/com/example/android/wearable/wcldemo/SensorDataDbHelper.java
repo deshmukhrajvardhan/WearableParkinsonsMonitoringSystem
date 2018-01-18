@@ -2,6 +2,7 @@ package com.example.android.wearable.wcldemo;
 
 /**
  * Created by rajvardhan on 11/29/17.
+ * This class is used to initialise the database to be used for recording sensor values.
  */
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -30,7 +31,7 @@ public class SensorDataDbHelper extends SQLiteOpenHelper{
 
     public SensorDataDbHelper(Context context){ //source of error
         super(context, DATABASE_NAME, null, DATABASE_VERSION);//cursor activity =null
-        //super(new DatabaseContext(context), DATABASE_NAME, null, DATABASE_VERSION);
+
         Log.d("DB", String.valueOf(context.getDatabasePath("sensorData.db")));
     }
 

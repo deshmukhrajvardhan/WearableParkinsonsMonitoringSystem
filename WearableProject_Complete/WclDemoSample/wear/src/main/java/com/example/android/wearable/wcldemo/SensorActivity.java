@@ -2,6 +2,8 @@ package com.example.android.wearable.wcldemo;
 
 /**
  * Created by rajvardhan on 11/29/17.
+ * This class displays the sensor reading on the watch and the handler is used to exit the {@link #SensorActivity} after
+ * 20 seconds {@link #finishTime}.
  */
 import android.app.Activity;
 import android.os.Bundle;

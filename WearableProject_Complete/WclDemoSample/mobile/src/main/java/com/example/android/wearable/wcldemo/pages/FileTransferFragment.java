@@ -54,11 +54,8 @@ import static android.os.Environment.getExternalStorageState;
 //0import com.example.android.wearable.wcldemo.DatabaseAccess;
 
 /**
- * A fragment that receives the files transferred from the wear app. There are two files that are
- * transferred; one is a text file and an image. When the text file is transferred, this fragment
- * reads the content of the file and presents that to the user in a text box. When the image starts
- * to its transfer, this fragment shows a spinner and when the transfer is complete, it shows the
- * image.
+ * A fragment that receives the database file transferred from the wear app. When the database file is transferred, this fragment
+ * reads the content of the file and presents that to the user in a text box.
  */
 public class FileTransferFragment extends Fragment {
 
@@ -103,9 +100,8 @@ public class FileTransferFragment extends Fragment {
     }
 
     /**
-     * Creates two listeners to be called when the transfer of the text file is completed and when
-     * a channel and an input stream is available to receive the image file. In some cases, it is
-     * desired to be transfer files even if the application at the receiving node is not in front.
+     * Creates a listener to be called when the transfer of the database file is completed. In some cases, it is
+     * desired to transfer files even if the application at the receiving node is not in front.
      * In those cases, one can define the same {@link com.google.devrel.wcl.callbacks.WearConsumer}
      * in the application instance; then the WearableListener that the WCL library provides will be
      * able to handle the transfer.
@@ -123,7 +119,7 @@ public class FileTransferFragment extends Fragment {
                     return;
                 }
                 Log.d(TAG, "Channel opened for path: " + channel.getPath());
-                //mAsyncTask = new AsyncTask<Void, Void, Bitmap>() {
+
                 mAsyncTask = new AsyncTask<Void, Void, String>() {
                     @Override
                     protected void onPreExecute() {
@@ -132,15 +128,18 @@ public class FileTransferFragment extends Fragment {
                     }
 
                     @Override
-                    // protected Bitmap doInBackground(Void... params) {
+
+                    /**
+                     * This function writes the stream input that it gets from the watch into the file "Wear.db" {@link #file}.
+                     */
                     protected String doInBackground(Void... params) {
-                        //Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
+
                         final byte[] buffer = new byte[BUFFER_SIZE];
                         BufferedInputStream in = null;
                         BufferedOutputStream out = null;
-                        //int nRead;
+
                        File file = new File(getContext().getExternalFilesDir(null), "Wear.db");
-                        //File file = new File("Wear.db");
+
                         try
                         {
                             in =  new BufferedInputStream(inputStream);
@@ -149,21 +148,12 @@ public class FileTransferFragment extends Fragment {
                             {
                                 out.write(buffer);
 
-                               // Log.d("tag", IOUtils.toString(buffer, StandardCharsets.UTF_8));
+
                             }
 
 
 
-                            // mTextView.setText(message);
 
-                           /* Cursor cursor = db.rawQuery("SELECT * FROM " + table, new String[0]);
-                            for(int i = 0; i < cursor.getCount(); i++) {
-                                cursor.moveToPosition(i);
-                                Log.v(TAG, "Row " + i);
-                                for(int c = 0; c < cursor.getColumnCount(); c++) {
-                                    Log.v(TAG, cursor.getColumnName(c)  + ":" + cursor.getString(c));
-                                }
-                            }*/
                         }
                         catch(IOException e)
                         {
@@ -173,8 +163,7 @@ public class FileTransferFragment extends Fragment {
                         if (isCancelled()) {
                             return null;
                         }
-                        // return bitmap;
-                        //outputStream.write(string.getBytes());
+
                         return "DB Transfer completed!";
                     }
 
@@ -185,26 +174,20 @@ public class FileTransferFragment extends Fragment {
                         closeStreams();
                     }
 
+                    /**
+                     * To verify the file transfer by reading the contents from the "Wear.db" file and show the length
+                     * and presence of it.
+                     * @param message
+                     */
                     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
                     @Override
                     protected void onPostExecute(String message) {
-                        //mProgressBar.setVisibility(View.GONE);
-                        // mImageView.setImageBitmap(bitmap);
-                        //super.onPostExecute();
 
                         File file = new File(getContext().getExternalFilesDir(null), "Wear.db");
-                        //File file = new File("Wear.db");
-                       // String file = "Wear.db";
-                        // Find the object of ListView in the onCreate method of MainActivity and feed the quotes which are read form the database.
-                        //private ListView listView;
-                        //listView = (ListView) getView().findViewById(R.id.listView);
-                        //List<String> text = new ArrayList<String>();
+
                          String line;
                         StringBuilder text = new StringBuilder();
-                        //DatabaseAccess databaseAccess = new DatabaseAccess(getActivity());
-                        //databaseAccess.open();
-                        //List<String> quotes = databaseAccess.getQuotes();
-                        //databaseAccess.close();
+
                         try {
                             BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -212,24 +195,20 @@ public class FileTransferFragment extends Fragment {
 
                             while ((line = br.readLine()) != null) {
                                 text.append(line);
-                             //  text.append('\n');
+
                             }
                             br.close();
                         }
                         catch (IOException e) {
                             //You'll need to add proper error handling here
                         }
-                        //listView.setText(line);
-                       //ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_list_item_1, (String[]) text.toArray() );
-                        //listView.setAdapter(adapter);
-                       // Log.d("abcdefgh", android.text.TextUtils.join(",", quotes));
+
 
                         if (file != null) {
                             mTextView.setText(String.valueOf(file.length()) + " " + getExternalStorageState(file) +  "DB Transfer completed" + String.valueOf(file.exists()) + text);
 
                         }
-                       //mTextView.setText(text + "DB Transfer completed");
-                        //databaseAccess.close();
+
 
 
                         mAsyncTask = null;

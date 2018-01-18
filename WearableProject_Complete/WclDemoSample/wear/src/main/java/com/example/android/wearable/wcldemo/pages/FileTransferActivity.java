@@ -54,19 +54,17 @@ import static java.security.AccessController.getContext;
 
 /**
  * An activity that shows two different approaches to transferring files between wear nodes.
- *
- * <p>In the first approach (called high-level on the UI), we have a text file that we want to
- * transfer across. We use {@link WearFileTransfer#startTransfer()} method to accomplish this.
- *
- * <p>The second approach, called low-level, transfers an image from the wear device (as a "raw"
- * asset) to the phone and we use {@link WearFileTransfer} apis to open a channel between the two
+
+
+ * <p>The low level approach transfers the db file which is specified in the method {@link #fileCheck()}
+ * from the wear device to the phone using method and we use {@link WearFileTransfer} apis to open a channel between the two
  * devices first and then open an {@link OutputStream} on the wear device and an {@link InputStream}
- * on the phone (through the channel). Then we simply read chunks of bytes from the image and write
+ * on the phone (through the channel). Then we simply read chunks of bytes from the db file(fileforDb) and write
  * to the {@code OutputStream} opened on the wear and read the transferred bytes from the
  * {@code InputStream} on the mobile. This approach is more useful for real-time communication to
  * transfer bytes as they become available (for example as the microphone on the watch is recording
  * a voice message). In this sample, we show a progress bar on the wear as we transfer bytes of the
- * image to the phone.
+ * db file to the phone.
  *
  * <p>A lot of the complexity involved in the orchestration of this approach is done in the library
  * and is hidden from the developer; developers only request an output stream on one end and will be
@@ -82,7 +80,7 @@ public class FileTransferActivity extends WearableActivity
 
     // the name of the text file that is in the assets directory and will be transferred across in
     // the "high-level" approach
-    private static final String TEXT_FILE_NAME = "text_file.txt";
+   // private static final String TEXT_FILE_NAME = "text_file.txt";
 
     // the resource pointing to the image that we transfer in the "low-level" approach
     private static final int IMAGE_RESOURCE_ID = R.raw.android_wear;///give the db id
@@ -135,28 +133,19 @@ public class FileTransferActivity extends WearableActivity
 
     }
 
+    /**
+     * To check the if the db file{@link com.example.android.wearable.wcldemo.SensorDataDbHelper#DATABASE_NAME} exists and to
+     * verify the length of the db file.
+     *
+     */
     public void fileCheck()
     {
         File fileforDb = null;
         fileforDb = new File(String.valueOf(this.getDatabasePath("sensorData.db")));
-        //mTextView.setText(String.valueOf(file.exists()));
-       // File file2 = new File(this.getFilesDir() + File.separator + "android_wear.db");
-        /*try {
-            InputStream inputStream = fileforDb;
-            FileOutputStream fileOutputStream = new FileOutputStream(file2);
 
-            byte buf[]=new byte[1024];
-            int len;
-            while((len=inputStream.read(buf))>0) {
-                fileOutputStream.write(buf,0,len);
-            }
-
-            fileOutputStream.close();
-            inputStream.close();
-        } catch (IOException e1) {}
-*/
         Log.d("Tag",String.valueOf(fileforDb.exists()) + "  " + String.valueOf(this.getDatabasePath("sensorData.db")) + "  " + String.valueOf(fileforDb.length()));
     }
+
 
     public void onClick(View view) {
         // first we try to find at least one nearby connected node
@@ -169,15 +158,7 @@ public class FileTransferActivity extends WearableActivity
             Log.d(TAG, "Targeting node: " + targetNode);
 
             switch (view.getId()) {
-                /*case R.id.high_level:
-                    // high-level approach
-                    WearFileTransfer fileTransferHighLevel = new WearFileTransfer.Builder(
-                            targetNode)
-                            .setTargetName(TEXT_FILE_NAME)
-                            .setFile(copyFileToPrivateDataIfNeededAndReturn(TEXT_FILE_NAME))
-                            .build();
-                    fileTransferHighLevel.startTransfer();
-                    break;*/
+
                 case R.id.low_level:
                     // the "low-level" approach
 
@@ -276,8 +257,9 @@ public class FileTransferActivity extends WearableActivity
 
     /**
      * Called on a non-UI thread
+     * This method shows the progress bar as the file is being transferred once the "Send DB" button is pressed.
      */
-    //This method shows the progress bar as the file is being transferred once the "Send DB" button is pressed.
+
     @Override
     public void onProgressUpdated(final long progress, final long max) {
         mHandler.post(new Runnable() {
@@ -289,47 +271,7 @@ public class FileTransferActivity extends WearableActivity
         });
     }
 
-    /**
-     * Copies a file from the assets directory to the internal application's file storage so we can
-     * get a hold of it as a {@link File} object. It returns a {@link File} reference to the
-     * file.
-     */
 
-    /*private File copyFileToPrivateDataIfNeededAndReturn (String fileName) {
-        File file = new File(this.getFilesDir(), fileName);
-        if (file.exists()) {
-            Log.d(TAG, "File already exists in the target location");
-            return file;
-        }
-        InputStream inputStream = null;
-        FileOutputStream fileOutputStream = null;
-        try {
-            inputStream = getAssets().open(fileName);
-            fileOutputStream = new FileOutputStream(file);
-
-            byte buffer[] = new byte[BUFFER_SIZE];
-            int len;
-            while ((len = inputStream.read(buffer)) > 0) {
-                fileOutputStream.write(buffer, 0, len);
-            }
-            Log.d(TAG, "File was successfully moved to " + file.getAbsolutePath());
-            return file;
-        } catch (IOException e) {
-            Log.e(TAG, "Failed to access files", e);
-        } finally {
-            try {
-                if (inputStream != null) {
-                    inputStream.close();
-                }
-                if (fileOutputStream != null) {
-                    fileOutputStream.close();
-                }
-            } catch (Exception e) {
-                // ignore
-            }
-        }
-        return null;
-    }*/
 
     @Override
     protected void onResume() {
