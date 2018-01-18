@@ -6,34 +6,34 @@ Here is the full [documentation](http://htmlpreview.github.com/?https://github.c
 ## Wear App
 The app for the wearable device 'Moto 360' which is used to record the sensor values when instructed by the mobile phone and store it in the database. <br />
 ![text](../master/Documentation_Resources/Wear_Options.jpg) 
-![text2](../master/Documentation_Resouces/Accelerometer.jpg)
+![text2](../master/Documentation_Resources/Accelerometer.jpg)
 ![text3](../master/Documentation_Resources/Gyroscope.jpg)
 
 The database can be pushed to the phone. <br />
 ![image](../master/Documentation_Resources/DB.jpg)
 
 Select ```File Transfer``` option and then click on ```Send DB``` to transfer the DB file to the android phone. <br />
-![text1](../master/Documentation_Resouces/WearOptions.jpg)
+![text1](../master/Documentation_Resources/WearOptions.jpg)
 
 Select ``Launch on Mobile``` option to open the app on the Android phone. <br />
 
 ## Mobile App
 The app for the Android mobile phone which has the following functionalities:
 a) Register new user. <br />
-![image1](../master/Documentation_Resouces/RegisterUser.jpg)
+![image1](../master/Documentation_Resources/RegisterUser.jpg)
 b) Register Medical History of the patient. <br />
-![image2](../master/Documentation_Resouces/MedicalHistory.jpg)
-![image3](../master/Documentation_Resouces/MedicalHistory2.jpg)
+![image2](../master/Documentation_Resources/MedicalHistory.jpg)
+![image3](../master/Documentation_Resources/MedicalHistory2.jpg)
 c) Record Sensor values for Rest Tremor Tests. To start the Android Watch sensor recording, select the ```Play``` button the phone. <br />
-![image5](../master/Documentation_Resouces/Tremortests.jpg)
-![image4](../master/Documentation_Resouces/RecordSensor.jpg)
+![image5](../master/Documentation_Resources/Tremortests.jpg)
+![image4](../master/Documentation_Resources/RecordSensor.jpg)
 d) Perform Cognitive test. <br /> 
-![image6](../master/Documentation_Resouces/Cognitive.jpg)
+![image6](../master/Documentation_Resources/Cognitive.jpg)
 e) Perform Bradykinesia test. <br />  
-![image8](../master/Documentation_Resouces/Bradykinesiatest.jpg)
-![image7](../master/Documentation_Resouces/Test.jpg)
+![image8](../master/Documentation_Resources/Bradykinesiatest.jpg)
+![image7](../master/Documentation_Resources/Test.jpg)
 f) To get the database file from the Android watch select File Transfer option. <br />
-![image9](../master/Documentation_Resouces/SelectTest.jpg)
+![image9](../master/Documentation_Resources/SelectTest.jpg)
 
 # Flexibility
 Both of our apps are independent and can be used individually as they also have different database files. <br />
