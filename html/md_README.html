@@ -42,7 +42,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -82,7 +81,94 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">WearableParkinsonsMonitoringSystem </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Movement monitoring using Moto360 watch and other tests for parkinsons. Will post the documentation soon. </p>
+<div class="textblock"><p>Movement monitoring using Moto360 watch and other tests for parkinsons. Here is the full <a href="http://htmlpreview.github.com/?https://github.com/deshmukhrajvardhan/WearableParkinsonsMonitoringSystem/blob/master/html/index.html">documentation</a>.</p>
+<h1>Overview</h1>
+<h2>Wear App</h2>
+<p>The app for the wearable device 'Moto 360' which is used to record the sensor values when instructed by the mobile phone and store it in the database. <br />
+ </p><div class="image">
+<img src="../master/Documentation_Resources/Wear_Options.jpg"  alt="text"/>
+</div>
+ <div class="image">
+<img src="../master/Documentation_Resources/Accelerometer.jpg"  alt="text2"/>
+</div>
+ <div class="image">
+<img src="../master/Documentation_Resources/Gyroscope.jpg"  alt="text3"/>
+</div>
+<p>The database can be pushed to the phone. <br />
+ </p><div class="image">
+<img src="../master/Documentation_Resources/DB.jpg"  alt="image"/>
+</div>
+<p>Select <code>File Transfer</code> option and then click on <code>Send DB</code> to transfer the DB file to the android phone. <br />
+ </p><div class="image">
+<img src="../master/Documentation_Resources/WearOptions.jpg"  alt="text1"/>
+</div>
+<p>Select <code>Launch on Mobile</code> option to open the app on the Android phone. <br />
+</p>
+<h2>Mobile App</h2>
+<p>The app for the Android mobile phone which has the following functionalities: a) Register new user. <br />
+ </p><div class="image">
+<img src="../master/Documentation_Resources/RegisterUser.jpg"  alt="image1"/>
+</div>
+<p> b) Register Medical History of the patient. <br />
+ </p><div class="image">
+<img src="../master/Documentation_Resources/MedicalHistory.jpg"  alt="image2"/>
+</div>
+ <div class="image">
+<img src="../master/Documentation_Resources/MedicalHistory2.jpg"  alt="image3"/>
+</div>
+<p> c) Record Sensor values for Rest Tremor Tests. To start the Android Watch sensor recording, select the <code>Play</code> button the phone. <br />
+ </p><div class="image">
+<img src="../master/Documentation_Resources/Tremortests.jpg"  alt="image5"/>
+</div>
+ <div class="image">
+<img src="../master/Documentation_Resources/RecordSensor.jpg"  alt="image4"/>
+</div>
+<p> d) Perform Cognitive test. <br />
+ </p><div class="image">
+<img src="../master/Documentation_Resources/Cognitive.jpg"  alt="image6"/>
+</div>
+<p> e) Perform Bradykinesia test. <br />
+ </p><div class="image">
+<img src="../master/Documentation_Resources/Bradykinesiatest.jpg"  alt="image8"/>
+</div>
+ <div class="image">
+<img src="../master/Documentation_Resources/Test.jpg"  alt="image7"/>
+</div>
+<p> f) To get the database file from the Android watch select File Transfer option. <br />
+ </p><div class="image">
+<img src="../master/Documentation_Resources/SelectTest.jpg"  alt="image9"/>
+</div>
+<h1>Flexibility</h1>
+<p>Both of our apps are independent and can be used individually as they also have different database files. <br />
+</p>
+<h1>Installation</h1>
+<ol type="1">
+<li><code>git clone <a href="https://github.com/deshmukhrajvardhan/WearableParkinsonsMonitoringSystem.git">https://github.com/deshmukhrajvardhan/WearableParkinsonsMonitoringSystem.git</a></code> <br />
+</li>
+<li>Install <a href="https://developer.android.com/studio/index.html">Android studio</a> <br />
+</li>
+<li>Open Android studio: choose <code>File-&gt;Open File or Project-&gt;</code> &lt;path&gt; <code>WclDemoSample</code> and <code>WearCompanionLibrary</code> together. <br />
+</li>
+<li>Android App: Enable developer <a href="https://developer.android.com/studio/run/device.html">options</a> on your phone. <br />
+</li>
+</ol>
+<h2>For Android Wear</h2>
+<ol type="1">
+<li>Install the <code>Android Wear</code> application on your phone from the app store. <br />
+</li>
+<li>Connect the watch to phone via bluetooth. <br />
+</li>
+<li><a href="https://forum.xda-developers.com/moto-360/general/guide-install-apk-moto-360-t3028067">Connect</a> the watch to the phone. <br />
+</li>
+<li>Enable the developer <a href="https://forums.androidcentral.com/moto-360/436873-how-enable-developer-options.html">options</a> on the Android watch. <br />
+</li>
+</ol>
+<h1>Useful Links</h1>
+<p><a href="https://github.com/googlesamples/android-WclDemoSample">https://github.com/googlesamples/android-WclDemoSample</a> <br />
+ <a href="https://github.com/googlesamples/android-WearCompanionLibrary">https://github.com/googlesamples/android-WearCompanionLibrary</a> <br />
+ <a href="https://github.com/drejkim/AndroidWearMotionSensors">https://github.com/drejkim/AndroidWearMotionSensors</a> <br />
+ <a href="https://developer.android.com/training/index.html">https://developer.android.com/training/index.html</a> <br />
+ </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

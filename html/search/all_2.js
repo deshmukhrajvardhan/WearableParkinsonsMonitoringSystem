@@ -5,13 +5,7 @@ var searchData=
   ['closechannel',['closeChannel',['../d1/d6a/classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager.html#a8b25b2f519724bf268c276e9ab7895aa',1,'com::google::devrel::wcl::WearManager']]],
   ['cognitiveactivity',['CognitiveActivity',['../d6/dd0/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1CognitiveActivity.html',1,'com::example::android::wearable::wcldemo']]],
   ['cognitivecolorshapetestactivity',['CognitiveColorShapeTestActivity',['../dd/d23/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1CognitiveColorShapeTestActivity.html',1,'com::example::android::wearable::wcldemo']]],
-  ['common',['common',['../d8/d76/namespacecom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1common.html',1,'com::example::android::wearable::wcldemo']]],
   ['constants',['Constants',['../de/d03/classcom_1_1google_1_1devrel_1_1wcl_1_1Constants.html',1,'com::google::devrel::wcl']]],
   ['constants',['Constants',['../d4/d3a/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1common_1_1Constants.html',1,'com::example::android::wearable::wcldemo::common']]],
-  ['contributor_20covenant_20code_20of_20conduct',['Contributor Covenant Code of Conduct',['../md_CODE_OF_CONDUCT.html',1,'']]],
-  ['test',['test',['../d3/dff/namespacecom_1_1google_1_1devrel_1_1wcl_1_1test.html',1,'com::google::devrel::wcl']]],
-  ['test',['test',['../de/dc1/namespacecom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1common_1_1test.html',1,'com::example::android::wearable::wcldemo::common']]],
-  ['test',['test',['../d1/da0/namespacecom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1test.html',1,'com::example::android::wearable::wcldemo']]],
-  ['wcl',['wcl',['../d8/d86/namespacecom_1_1google_1_1devrel_1_1wcl.html',1,'com::google::devrel']]],
-  ['wcldemo',['wcldemo',['../d3/d4e/namespacecom_1_1example_1_1android_1_1wearable_1_1wcldemo.html',1,'com::example::android::wearable']]]
+  ['contributor_20covenant_20code_20of_20conduct',['Contributor Covenant Code of Conduct',['../md_CODE_OF_CONDUCT.html',1,'']]]
 ];

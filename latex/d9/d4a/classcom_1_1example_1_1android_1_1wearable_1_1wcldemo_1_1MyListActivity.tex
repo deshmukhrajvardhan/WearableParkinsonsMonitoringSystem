@@ -2,8 +2,7 @@
 \label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity}\index{com.\+example.\+android.\+wearable.\+wcldemo.\+My\+List\+Activity@{com.\+example.\+android.\+wearable.\+wcldemo.\+My\+List\+Activity}}
 
 
-Inheritance diagram for com.\+example.\+android.\+wearable.\+wcldemo.\+My\+List\+Activity\+:
-\nopagebreak
+Inheritance diagram for com.\+example.\+android.\+wearable.\+wcldemo.\+My\+List\+Activity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -12,8 +11,7 @@ Inheritance diagram for com.\+example.\+android.\+wearable.\+wcldemo.\+My\+List\
 \end{figure}
 
 
-Collaboration diagram for com.\+example.\+android.\+wearable.\+wcldemo.\+My\+List\+Activity\+:
-\nopagebreak
+Collaboration diagram for com.\+example.\+android.\+wearable.\+wcldemo.\+My\+List\+Activity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,11 +21,9 @@ Collaboration diagram for com.\+example.\+android.\+wearable.\+wcldemo.\+My\+Lis
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void {\bfseries on\+Item\+Clicked} (int position, String value)\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_a399a7ccb7a66ef28df4d601f21095b25}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_a399a7ccb7a66ef28df4d601f21095b25}
-
+void \hyperlink{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_a399a7ccb7a66ef28df4d601f21095b25}{on\+Item\+Clicked} (int position, String value)
 \item 
-\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig}{Wearable\+List\+Config} {\bfseries get\+Configuration} ()\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_a0566083fd4b31bd9daa85ba32cd279e2}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_a0566083fd4b31bd9daa85ba32cd279e2}
-
+\hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig}{Wearable\+List\+Config} \hyperlink{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_a0566083fd4b31bd9daa85ba32cd279e2}{get\+Configuration} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -43,7 +39,7 @@ void {\bfseries on\+Resume} ()\hypertarget{classcom_1_1example_1_1android_1_1wea
 
 
 \subsection{Detailed Description}
-The entry point to the application. This activity also serves as a demo of the \hyperlink{}{Abstract\+Wearable\+List\+View\+Activity}; clients need to only implement two methods in this class to have a fully functional List\+View. In this activity, we also demo a different way to show a Wearable\+List\+View by calling \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a446c9ae3e23609bc16d87e4ece91ed72}{Wear\+Manager\#show\+Wearable\+List(\+Activity, Wearable\+List\+Config)}; that approach is useful when you want to present a list to the user and close the list after user makes a selection; the result can be captured by \hyperlink{}{Activity\#on\+Activity\+Result(int, int, Intent)} as shown here.
+The entry point to the application. This activity also serves as an implementation of the \hyperlink{}{Abstract\+Wearable\+List\+View\+Activity}; clients need to only implement two methods in this class to have a fully functional List\+View. In this activity, we also use a different way to show a Wearable\+List\+View by calling \hyperlink{classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager_a446c9ae3e23609bc16d87e4ece91ed72}{Wear\+Manager\#show\+Wearable\+List(\+Activity, Wearable\+List\+Config)}; that approach is useful when you want to present a list to the user and close the list after user makes a selection; the result can be captured by \hyperlink{}{Activity\#on\+Activity\+Result(int, int, Intent)} as shown here.
 
 \begin{DoxySeeAlso}{See also}
 Abstract\+Wearable\+List\+View\+Activity 
@@ -51,6 +47,16 @@ Abstract\+Wearable\+List\+View\+Activity
 
 
 \subsection{Member Function Documentation}
+\index{com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity}!get\+Configuration@{get\+Configuration}}
+\index{get\+Configuration@{get\+Configuration}!com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity}}
+\subsubsection[{\texorpdfstring{get\+Configuration()}{getConfiguration()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Wearable\+List\+Config} com.\+example.\+android.\+wearable.\+wcldemo.\+My\+List\+Activity.\+get\+Configuration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_a0566083fd4b31bd9daa85ba32cd279e2}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_a0566083fd4b31bd9daa85ba32cd279e2}
+Has the list of icons and placeholder names for the options. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
 \index{com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity}!on\+Activity\+Result@{on\+Activity\+Result}}
 \index{on\+Activity\+Result@{on\+Activity\+Result}!com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity}}
 \subsubsection[{\texorpdfstring{on\+Activity\+Result(int request\+Code, int result\+Code, Intent data)}{onActivityResult(int requestCode, int resultCode, Intent data)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+android.\+wearable.\+wcldemo.\+My\+List\+Activity.\+on\+Activity\+Result (
@@ -60,11 +66,15 @@ Abstract\+Wearable\+List\+View\+Activity
 \item[{Intent}]{data}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_ac9367639e40812209a7d0e4df226a845}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_ac9367639e40812209a7d0e4df226a845}
-This method shows how you can open a full screen list of options for user to make a selection. The result of that selection will be captured by the
-\begin{DoxyCode}
-\hyperlink{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_ac9367639e40812209a7d0e4df226a845}{onActivityResult} 
-\end{DoxyCode}
- below. 
+This method is the result of selection on the main page. The selection is captured in this method. \index{com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity}!on\+Item\+Clicked@{on\+Item\+Clicked}}
+\index{on\+Item\+Clicked@{on\+Item\+Clicked}!com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity@{com\+::example\+::android\+::wearable\+::wcldemo\+::\+My\+List\+Activity}}
+\subsubsection[{\texorpdfstring{on\+Item\+Clicked(int position, String value)}{onItemClicked(int position, String value)}}]{\setlength{\rightskip}{0pt plus 5cm}void com.\+example.\+android.\+wearable.\+wcldemo.\+My\+List\+Activity.\+on\+Item\+Clicked (
+\begin{DoxyParamCaption}
+\item[{int}]{position, }
+\item[{String}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_a399a7ccb7a66ef28df4d601f21095b25}{}\label{classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity_a399a7ccb7a66ef28df4d601f21095b25}
+This method is for the main page of the Wearable App. It shows the 3 options for the users to select i.\+e., File Transfer (File\+Transfer\+Activity), Record Sensor Values(\+Sensor\+Activity) and Launch Mobile App(launch\+Mobile\+App) 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

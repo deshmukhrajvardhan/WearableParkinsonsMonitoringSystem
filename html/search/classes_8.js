@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['mobileapplication',['MobileApplication',['../d8/d66/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MobileApplication.html',1,'com::example::android::wearable::wcldemo']]],
-  ['mobilemainactivity',['MobileMainActivity',['../d1/d9a/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MobileMainActivity.html',1,'com::example::android::wearable::wcldemo']]],
-  ['mylistactivity',['MyListActivity',['../d9/d4a/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity.html',1,'com::example::android::wearable::wcldemo']]]
+  ['nearbyfilter',['NearbyFilter',['../df/dac/classcom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1NearbyFilter.html',1,'com::google::devrel::wcl::filters']]],
+  ['nodeselectionfilter',['NodeSelectionFilter',['../da/d9f/interfacecom_1_1google_1_1devrel_1_1wcl_1_1filters_1_1NodeSelectionFilter.html',1,'com::google::devrel::wcl::filters']]]
 ];

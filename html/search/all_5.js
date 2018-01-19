@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['filecheck',['fileCheck',['../de/d27/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity.html#ab5d34a68bab9687e8c6c6728078b1787',1,'com::example::android::wearable::wcldemo::pages::FileTransferActivity']]],
   ['filetransferactivity',['FileTransferActivity',['../de/d27/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferActivity.html',1,'com::example::android::wearable::wcldemo::pages']]],
   ['filetransferfragment',['FileTransferFragment',['../d6/dff/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1FileTransferFragment.html',1,'com::example::android::wearable::wcldemo::pages']]],
   ['filterfornearby',['filterForNearby',['../d7/d58/classcom_1_1google_1_1devrel_1_1wcl_1_1Utils.html#a6cad21ff79fa0fe2a34947b48e3f53fb',1,'com::google::devrel::wcl::Utils']]],

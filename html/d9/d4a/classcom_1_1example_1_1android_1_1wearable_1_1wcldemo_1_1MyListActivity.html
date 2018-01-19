@@ -42,7 +42,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="../../namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>android</b></li><li class="navelem"><b>wearable</b></li><li class="navelem"><a class="el" href="../../d3/d4e/namespacecom_1_1example_1_1android_1_1wearable_1_1wcldemo.html">wcldemo</a></li><li class="navelem"><a class="el" href="../../d9/d4a/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity.html">MyListActivity</a></li>  </ul>
+<li class="navelem"><b>com</b></li><li class="navelem"><b>example</b></li><li class="navelem"><b>android</b></li><li class="navelem"><b>wearable</b></li><li class="navelem"><b>wcldemo</b></li><li class="navelem"><a class="el" href="../../d9/d4a/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity.html">MyListActivity</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -117,11 +116,9 @@ Collaboration diagram for com.example.android.wearable.wcldemo.MyListActivity:</
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a399a7ccb7a66ef28df4d601f21095b25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a399a7ccb7a66ef28df4d601f21095b25"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>onItemClicked</b> (int position, String value)</td></tr>
+<tr class="memitem:a399a7ccb7a66ef28df4d601f21095b25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4a/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity.html#a399a7ccb7a66ef28df4d601f21095b25">onItemClicked</a> (int position, String value)</td></tr>
 <tr class="separator:a399a7ccb7a66ef28df4d601f21095b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0566083fd4b31bd9daa85ba32cd279e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0566083fd4b31bd9daa85ba32cd279e2"></a>
-<a class="el" href="../../d9/d14/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig.html">WearableListConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getConfiguration</b> ()</td></tr>
+<tr class="memitem:a0566083fd4b31bd9daa85ba32cd279e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d14/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig.html">WearableListConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4a/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity.html#a0566083fd4b31bd9daa85ba32cd279e2">getConfiguration</a> ()</td></tr>
 <tr class="separator:a0566083fd4b31bd9daa85ba32cd279e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../df/d39/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity.html">com.google.devrel.wcl.widgets.list.AbstractWearableListViewActivity</a></td></tr>
 <tr class="memitem:a2846ac8d8bf01ce575387a9d6598e2c7 inherit pub_methods_classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d39/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1AbstractWearableListViewActivity.html#a2846ac8d8bf01ce575387a9d6598e2c7">onItemClicked</a> (int position, String value)</td></tr>
@@ -141,9 +138,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onResume</b> ()</td><
 <tr class="separator:adc017146a7a2ad1766456f5d5931b9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The entry point to the application. This activity also serves as a demo of the <a class="el" href="../../">AbstractWearableListViewActivity</a>; clients need to only implement two methods in this class to have a fully functional ListView. In this activity, we also demo a different way to show a WearableListView by calling <a class="el" href="../../d1/d6a/classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager.html#a446c9ae3e23609bc16d87e4ece91ed72">WearManager#showWearableList(Activity, WearableListConfig)</a>; that approach is useful when you want to present a list to the user and close the list after user makes a selection; the result can be captured by <a class="el" href="../../">Activity#onActivityResult(int, int, Intent)</a> as shown here.</p>
+<div class="textblock"><p>The entry point to the application. This activity also serves as an implementation of the <a class="el" href="../../">AbstractWearableListViewActivity</a>; clients need to only implement two methods in this class to have a fully functional ListView. In this activity, we also use a different way to show a WearableListView by calling <a class="el" href="../../d1/d6a/classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager.html#a446c9ae3e23609bc16d87e4ece91ed72">WearManager#showWearableList(Activity, WearableListConfig)</a>; that approach is useful when you want to present a list to the user and close the list after user makes a selection; the result can be captured by <a class="el" href="../../">Activity#onActivityResult(int, int, Intent)</a> as shown here.</p>
 <dl class="section see"><dt>See also</dt><dd>AbstractWearableListViewActivity </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a0566083fd4b31bd9daa85ba32cd279e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d9/d14/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1WearableListConfig.html">WearableListConfig</a> com.example.android.wearable.wcldemo.MyListActivity.getConfiguration </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Has the list of icons and placeholder names for the options. </p><dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ac9367639e40812209a7d0e4df226a845"></a>
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +194,34 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>onResume</b> ()</td><
   </tr>
 </table>
 </div><div class="memdoc">
-<p>This method shows how you can open a full screen list of options for user to make a selection. The result of that selection will be captured by the</p><div class="fragment"><div class="line"><a class="code" href="../../d9/d4a/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MyListActivity.html#ac9367639e40812209a7d0e4df226a845">onActivityResult</a> </div></div><!-- fragment --><p> below. </p>
+<p>This method is the result of selection on the main page. The selection is captured in this method. </p>
+
+</div>
+</div>
+<a class="anchor" id="a399a7ccb7a66ef28df4d601f21095b25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.example.android.wearable.wcldemo.MyListActivity.onItemClicked </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>position</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This method is for the main page of the Wearable App. It shows the 3 options for the users to select i.e., File Transfer (FileTransferActivity), Record Sensor Values(SensorActivity) and Launch Mobile App(launchMobileApp) </p>
 
 </div>
 </div>

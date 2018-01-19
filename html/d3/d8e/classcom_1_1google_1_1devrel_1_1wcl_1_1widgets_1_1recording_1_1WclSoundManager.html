@@ -42,7 +42,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
     <ul class="tablist">
       <li><a href="../../index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="../../pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="../../namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="../../annotated.html"><span>Classes</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -86,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>com</b></li><li class="navelem"><b>google</b></li><li class="navelem"><b>devrel</b></li><li class="navelem"><a class="el" href="../../d8/d86/namespacecom_1_1google_1_1devrel_1_1wcl.html">wcl</a></li><li class="navelem"><b>widgets</b></li><li class="navelem"><b>recording</b></li><li class="navelem"><a class="el" href="../../d3/d8e/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager.html">WclSoundManager</a></li>  </ul>
+<li class="navelem"><b>com</b></li><li class="navelem"><b>google</b></li><li class="navelem"><b>devrel</b></li><li class="navelem"><b>wcl</b></li><li class="navelem"><b>widgets</b></li><li class="navelem"><b>recording</b></li><li class="navelem"><a class="el" href="../../d3/d8e/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager.html">WclSoundManager</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -168,7 +167,7 @@ static final int&#160;</td><td class="memItemRight" valign="bottom"><b>ERROR_AUD
 <tr class="separator:a5da38584198f48f9745c97c509f95209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A helper class to provide methods to record audio input from the mic and its playback. Recording is supported to a file or to an <a class="el" href="../../">OutputStream</a> and playback is supported from a file or an <a class="el" href="../../">InputStream</a>. After constructing an instance of this class, you can call the appropriate methods to start or stop recording or playback. Callers can also provide listeners that would be notified when recording or playback tasks end, whether on their own or due to an exception or interruption. Note that for recording, caller should obtain </p><div class="fragment"><div class="line"><a class="code" href="../../d2/dbb/namespaceandroid.html">android</a>.permission.RECORD_AUDIO </div></div><!-- fragment --><p> permission. </p>
+<div class="textblock"><p>A helper class to provide methods to record audio input from the mic and its playback. Recording is supported to a file or to an <a class="el" href="../../">OutputStream</a> and playback is supported from a file or an <a class="el" href="../../">InputStream</a>. After constructing an instance of this class, you can call the appropriate methods to start or stop recording or playback. Callers can also provide listeners that would be notified when recording or playback tasks end, whether on their own or due to an exception or interruption. Note that for recording, caller should obtain </p><div class="fragment"><div class="line">android.permission.RECORD_AUDIO </div></div><!-- fragment --><p> permission. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a13c39c7174f494dbb89e598f6074d0ce"></a>
 <div class="memitem">
@@ -422,7 +421,7 @@ static final int&#160;</td><td class="memItemRight" valign="bottom"><b>ERROR_AUD
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Starts recording from the mic and writing the result to the</p><div class="fragment"><div class="line">outputStream </div></div><!-- fragment --><p> . This method handles various errors gracefully and logs any errors that it encounters. Caller should obtain</p><div class="fragment"><div class="line"><a class="code" href="../../d2/dbb/namespaceandroid.html">android</a>.permission.RECORD_AUDIO </div></div><!-- fragment --><p> permission to record from the microphone.</p>
+<p>Starts recording from the mic and writing the result to the</p><div class="fragment"><div class="line">outputStream </div></div><!-- fragment --><p> . This method handles various errors gracefully and logs any errors that it encounters. Caller should obtain</p><div class="fragment"><div class="line">android.permission.RECORD_AUDIO </div></div><!-- fragment --><p> permission to record from the microphone.</p>
 <p><b>Note. </b>This method should be called on the UI thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -461,7 +460,7 @@ static final int&#160;</td><td class="memItemRight" valign="bottom"><b>ERROR_AUD
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Starts recording from the mic and writing the result to the</p><div class="fragment"><div class="line">outputStream </div></div><!-- fragment --><p> . This method handles various errors gracefully and reports the status through the</p><div class="fragment"><div class="line">listener </div></div><!-- fragment --><p> if it is not</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> . Upon completion, it closes the</p><div class="fragment"><div class="line">outputStream </div></div><!-- fragment --><p> . Caller should obtain</p><div class="fragment"><div class="line"><a class="code" href="../../d2/dbb/namespaceandroid.html">android</a>.permission.RECORD_AUDIO </div></div><!-- fragment --><p> permission to record from the microphone.</p>
+<p>Starts recording from the mic and writing the result to the</p><div class="fragment"><div class="line">outputStream </div></div><!-- fragment --><p> . This method handles various errors gracefully and reports the status through the</p><div class="fragment"><div class="line">listener </div></div><!-- fragment --><p> if it is not</p><div class="fragment"><div class="line">null </div></div><!-- fragment --><p> . Upon completion, it closes the</p><div class="fragment"><div class="line">outputStream </div></div><!-- fragment --><p> . Caller should obtain</p><div class="fragment"><div class="line">android.permission.RECORD_AUDIO </div></div><!-- fragment --><p> permission to record from the microphone.</p>
 <p><b>Note. </b>This method should be called on the UI thread.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

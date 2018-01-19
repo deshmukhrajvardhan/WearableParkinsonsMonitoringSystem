@@ -6,8 +6,8 @@ var searchData=
   ['sendnavmessage',['sendNavMessage',['../d8/d66/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1MobileApplication.html#ad0fb4714bc0e8f5ca80d0c6fc2b4e97d',1,'com.example.android.wearable.wcldemo.MobileApplication.sendNavMessage()'],['../db/d75/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1WearApplication.html#a515c8df5afb40f771f8ef56736e6b03c',1,'com.example.android.wearable.wcldemo.WearApplication.sendNavMessage()']]],
   ['sensoractivity',['SensorActivity',['../d6/d18/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1SensorActivity.html',1,'com::example::android::wearable::wcldemo']]],
   ['sensordatacontract',['SensorDataContract',['../d7/df3/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1SensorDataContract.html',1,'com::example::android::wearable::wcldemo']]],
-  ['sensordatadbhelper',['SensorDataDbHelper',['../d9/dac/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1SensorDataDbHelper.html',1,'com::example::android::wearable::wcldemo']]],
   ['sensordatadbhelper',['SensorDataDbHelper',['../d7/db9/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1helper_1_1SensorDataDbHelper.html',1,'com::example::android::wearable::wcldemo::helper']]],
+  ['sensordatadbhelper',['SensorDataDbHelper',['../d9/dac/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1SensorDataDbHelper.html',1,'com::example::android::wearable::wcldemo']]],
   ['sensorfragment',['SensorFragment',['../d8/db9/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1SensorFragment.html',1,'com::example::android::wearable::wcldemo']]],
   ['sensorfragmentpageradapter',['SensorFragmentPagerAdapter',['../d4/de1/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1SensorFragmentPagerAdapter.html',1,'com::example::android::wearable::wcldemo']]],
   ['setchecked',['setChecked',['../d2/d48/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1list_1_1SelectableWearableListAdapter.html#a8b47c5e515a0b5589241612e9d3ede5e',1,'com::google::devrel::wcl::widgets::list::SelectableWearableListAdapter']]],
@@ -20,9 +20,6 @@ var searchData=
   ['status_5ferror_5fnode_5fnot_5ffound',['STATUS_ERROR_NODE_NOT_FOUND',['../d6/d98/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclRecorderActivity.html#a4b4c947e0d87f688749786885282a1f8',1,'com::google::devrel::wcl::widgets::recording::WclRecorderActivity']]],
   ['status_5ferror_5frecorder_5ffailed',['STATUS_ERROR_RECORDER_FAILED',['../d6/d98/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclRecorderActivity.html#a7806794abe1851ef4bf387d01cc6e83d',1,'com::google::devrel::wcl::widgets::recording::WclRecorderActivity']]],
   ['status_5fsuccess',['STATUS_SUCCESS',['../d6/d98/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclRecorderActivity.html#a4631e92aa0ce773404a1acf457b6aff3',1,'com::google::devrel::wcl::widgets::recording::WclRecorderActivity']]],
-  ['stockactivity',['StockActivity',['../d8/dcf/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockActivity.html',1,'com::example::android::wearable::wcldemo::pages']]],
-  ['stockfragment',['StockFragment',['../d1/d09/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StockFragment.html',1,'com::example::android::wearable::wcldemo::pages']]],
   ['stopplaying',['stopPlaying',['../d3/d8e/classcom_1_1google_1_1devrel_1_1wcl_1_1widgets_1_1recording_1_1WclSoundManager.html#a4cca65082543881b128de7d0e81b1fbc',1,'com::google::devrel::wcl::widgets::recording::WclSoundManager']]],
-  ['stopwearableservice',['stopWearableService',['../d1/d6a/classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager.html#ab1fac2df063290c71ac555851a5066c6',1,'com::google::devrel::wcl::WearManager']]],
-  ['streamingvoiceactivity',['StreamingVoiceActivity',['../de/d88/classcom_1_1example_1_1android_1_1wearable_1_1wcldemo_1_1pages_1_1StreamingVoiceActivity.html',1,'com::example::android::wearable::wcldemo::pages']]]
+  ['stopwearableservice',['stopWearableService',['../d1/d6a/classcom_1_1google_1_1devrel_1_1wcl_1_1WearManager.html#ab1fac2df063290c71ac555851a5066c6',1,'com::google::devrel::wcl::WearManager']]]
 ];
