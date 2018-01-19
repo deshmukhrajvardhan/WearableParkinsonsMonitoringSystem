@@ -7,6 +7,12 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageView;
 
+
+/**
+ * This cass displays the instruction for Cognitive assessment: Color-Shape test,
+ * and provides a start test button. On clicking, CognitiveColorShapeTestActivity page is opened
+ */
+
 public class CognitiveActivity extends AppCompatActivity {
 
     private static WebView instructions;

@@ -10,6 +10,15 @@ import android.widget.TextView;
 
 import com.example.android.wearable.wcldemo.pages.FileTransferFragment;
 
+
+/**
+ * This method is for the main page of the Wearable App after Login and submitting history.
+ * It displays the list of tests for the objective quantification of
+ * ET symptoms: tremor, bradykinesia, ataxia, and cognitive dysfunctions.
+ * Once the test is selected, respected page will be opened
+ */
+
+
 public class TestListActivity extends AppCompatActivity {
 
     @Override

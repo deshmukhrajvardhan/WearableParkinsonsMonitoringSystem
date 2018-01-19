@@ -8,6 +8,13 @@ import android.widget.ImageView;
 
 import java.util.Random;
 
+
+/**
+ * This class defines Cognitive assessment: Color-Shape test,
+ * which consists of paired colors and shapes.
+ * The test records the number of correct and incorrect attempts over 2 minutes.
+ */
+
 public class CognitiveColorShapeTestActivity extends AppCompatActivity {
 
     private Integer[] shapeList = {R.drawable.triangle,

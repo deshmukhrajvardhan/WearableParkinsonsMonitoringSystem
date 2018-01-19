@@ -4,7 +4,9 @@ import android.provider.BaseColumns;
 
 /**
  * Created by mohni on 11/29/2017.
+ * This class defines the columns in the sensor readings database.
  */
+
 
 public class SensorDataContract {
     public static final class SensorDataEntry implements BaseColumns {

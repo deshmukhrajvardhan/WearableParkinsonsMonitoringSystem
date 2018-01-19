@@ -26,7 +26,12 @@ import static android.hardware.Sensor.TYPE_GYROSCOPE;
 
 /**
  * Created by ${disha} on ${11/20/2017}.
+ * This class collects the data from smartphone-embedded sensors for Tremor Postural Activity
+ * for 20sec and stores the readings in the database
+ * with the COLUMN_VALUE in the table as "Kinetic"
+ * and generates a tone after completion of test
  */
+
 
 public class TremorKineticActivity extends AppCompatActivity implements SensorEventListener {
 
@@ -195,6 +200,7 @@ public class TremorKineticActivity extends AppCompatActivity implements SensorEv
 
     private long addNewSensorData(float accelerometerMagnitude, float accelerometerX, float accelerometerY, float accelerometerZ, float gyroscopeMagnitude, float gyroscopeX, float gyroscopeY, float gyroscopeZ) {
 
+        /**
         Log.d(TAG, "-accelerometerMagnitude" + accelerometerMagnitude);
         Log.d(TAG, "-accelerometerX" + accelerometerX);
         Log.d(TAG, "-accelerometerY" + accelerometerY);
@@ -203,6 +209,7 @@ public class TremorKineticActivity extends AppCompatActivity implements SensorEv
         Log.d(TAG, "-GyroscopeX" + mGyroscopeX);
         Log.d(TAG, "-GyroscopeY" + mGyroscopeY);
         Log.d(TAG, "-GyroscopeZ" + mGyroscopeZ);
+        */
         ContentValues cv = new ContentValues();
         String value = "Kinetic";
         cv.put(SensorDataContract.SensorDataEntry.COLUMN_VALUE, value);

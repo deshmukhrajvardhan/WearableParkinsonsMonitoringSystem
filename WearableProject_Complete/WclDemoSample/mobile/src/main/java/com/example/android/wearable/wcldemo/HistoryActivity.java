@@ -17,7 +17,12 @@ import com.example.android.wearable.wcldemo.helper.DatabaseHistoryHandler;
 
 /**
  * Created by disha on 11/19/2017.
+ * This class gets the User Demographics and Medical History
+ * pertaining to their age, gender, race, height, weight, socioeconomic status,
+ * and education as well as their general health, any diagnosed disease,
+ * medication, and substance and alcohol use, and stores in the database
  */
+
 
 public class HistoryActivity extends Activity{
 
@@ -98,6 +103,9 @@ public class HistoryActivity extends Activity{
             }
         });
 
+        /**On clicking Skip Button, {@link TestListActivity} page
+         * is launched
+         */
         final Button Skip = (Button) findViewById(R.id.btnSkip);
         Skip.setOnClickListener(new Button.OnClickListener() {
             @Override

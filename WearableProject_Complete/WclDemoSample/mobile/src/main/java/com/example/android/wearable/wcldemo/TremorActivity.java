@@ -9,6 +9,12 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+/**
+ * This class displays Tremor tests such as Rest, Postural, Intention and Kinetic for selecting.
+ * It puts a correct mark for the tests that are completed
+ */
+
+
 public class TremorActivity extends AppCompatActivity {
 
     private TextView restTremor, posturalTremor, intentionTremor, kineticTremor;

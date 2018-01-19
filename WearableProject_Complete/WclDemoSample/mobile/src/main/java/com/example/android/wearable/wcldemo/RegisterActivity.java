@@ -17,7 +17,10 @@ import com.example.android.wearable.wcldemo.helper.DatabaseHistoryHandler;
 
 /**
  * Created by disha on 10/28/2017.
+ * This class gets Username, Phone, Email and Password for Registering
+ * the user, checks if user exists and stores in database
  */
+
 
 
 public class RegisterActivity extends Activity {
@@ -80,7 +83,10 @@ public class RegisterActivity extends Activity {
         });
     }
 
-    /*Async Task to Send data to server.*/
+    /**Async Task to Create Account.
+     * Checks if User exists in the database
+     * Registers User and launches Login Screen
+     */
     private class userRegister extends AsyncTask<Void, Void, Void> {
 
         @Override

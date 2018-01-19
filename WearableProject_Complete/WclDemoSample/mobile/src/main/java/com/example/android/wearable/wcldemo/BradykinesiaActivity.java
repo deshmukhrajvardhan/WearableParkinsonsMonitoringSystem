@@ -6,6 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+/**
+ * This class displays a test list page for
+ * Bradykinesia assessment: Rapid alternating movement and Finger Tapping
+ * Upon selecting respected activity page will be displayed
+ */
 
 public class BradykinesiaActivity extends AppCompatActivity {
 

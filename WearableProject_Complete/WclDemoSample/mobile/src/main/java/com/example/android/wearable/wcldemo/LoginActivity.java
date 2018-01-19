@@ -16,8 +16,11 @@ import com.example.android.wearable.wcldemo.helper.DatabaseHistoryHandler;
 
 
 /**
- * Created by disha on 11/10/2017.
+ * Created by disha on 10/28/2017.
+ * The entry point to the application. This activity serves as a Login Screen to the Users
+ * who will be asked to login/register to the application.
  */
+
 
 public class LoginActivity extends Activity{
 
@@ -32,6 +35,11 @@ public class LoginActivity extends Activity{
     private DatabaseHistoryHandler db;
     private static final String TAG = "MyActivity";
 
+    /**
+     * This method gets the Username and Password entered by the User and compares it with the database
+     * and provides appropriate error message if user data does not match
+     * @param savedInstanceState
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

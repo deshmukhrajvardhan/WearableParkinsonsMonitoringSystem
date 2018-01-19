@@ -24,6 +24,14 @@ import com.google.devrel.wcl.WearManager;
 import static android.hardware.Sensor.TYPE_ACCELEROMETER;
 import static android.hardware.Sensor.TYPE_GYROSCOPE;
 
+/**
+ * This class collects the data from smartphone-embedded sensors for Tremor Rest Activity
+ * for 20sec {@link #count} and stores the readings in the database
+ * with the COLUMN_VALUE in the table as "Rest"
+ * and generates a tone after completion of test
+ */
+
+
 public class TremorRestActivity extends AppCompatActivity implements SensorEventListener{
 
     private static ImageView play;
@@ -64,6 +72,7 @@ public class TremorRestActivity extends AppCompatActivity implements SensorEvent
 
         instructions = (WebView) findViewById(R.id.instruct);
 
+        //To display the instructions
         String htmlText = " %s ";
         String myData = "<html><body  style=\"text-align:justify;\">";
         myData += "1. Posture: Hold the smartphone in your dominant hand, while standing with arm towards side.<br /> ";
@@ -73,6 +82,7 @@ public class TremorRestActivity extends AppCompatActivity implements SensorEvent
 
         instructions.loadData(String.format(htmlText, myData), "text/html", "utf-8");
 
+        /**{@link setOnClickListener} class starts when start button is pressed */
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -132,6 +142,7 @@ public class TremorRestActivity extends AppCompatActivity implements SensorEvent
     private void toastMessage(int resId) {
         Toast.makeText(this, resId, Toast.LENGTH_SHORT).show();
     }
+    //This class gets the accelerometer and gyroscope readings
     @Override
     public void onSensorChanged(SensorEvent event) {
         // If sensor is unreliable, then just return
@@ -194,6 +205,7 @@ public class TremorRestActivity extends AppCompatActivity implements SensorEvent
 
     private long addNewSensorData(float accelerometerMagnitude, float accelerometerX, float accelerometerY, float accelerometerZ,float gyroscopeMagnitude, float gyroscopeX, float gyroscopeY, float gyroscopeZ){
 
+        /**
         Log.d(TAG, "-accelerometerMagnitude" +accelerometerMagnitude);
         Log.d(TAG, "-accelerometerX" +accelerometerX);
         Log.d(TAG, "-accelerometerY" +accelerometerY);
@@ -202,6 +214,7 @@ public class TremorRestActivity extends AppCompatActivity implements SensorEvent
         Log.d(TAG, "-GyroscopeX" +mGyroscopeX);
         Log.d(TAG, "-GyroscopeY" +mGyroscopeY);
         Log.d(TAG, "-GyroscopeZ" +mGyroscopeZ);
+         */
         ContentValues cv = new ContentValues();
         String value = "Rest";
         cv.put(SensorDataContract.SensorDataEntry.COLUMN_VALUE,value);
